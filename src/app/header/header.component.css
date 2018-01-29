@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+}
+
+button {
+    margin: 0 25px;
+    padding: 19px;
+    background-color: white;
+}

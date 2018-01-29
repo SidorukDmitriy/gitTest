@@ -1,0 +1,15 @@
+<div class="header">
+  <button class="btn"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>  
+  <div class="date-time-picker" mat-raised-button (click)="picker.open()"> 
+    <mat-form-field class="mat-input-container"> 
+    <label *ngIf="!myInput">Сегодня / Сейчас</label> 
+    <label *ngIf="myInput">{{myInput | date: 'dd.MM.yyyy'}}</label> 
+    <input matInput [matDatepicker]="picker" style="display: none;" [(ngModel)]="myInput" readonly> 
+    <mat-datepicker #picker></mat-datepicker> 
+    </mat-form-field> 
+    <div class="arrow-icon-box"> 
+    <span class="icon-next_arrow"></span> 
+    </div> 
+    </div>
+  <button class="btn">BABA</button>
+</div>
